@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+</head>
+<body>
+    <h1>Hello CSP</h1>
+    <img src="https://smj.medicine.psu.ac.th" alt="Test Image">
+    <script>alert('Test');</script> <!-- ปลอดภัย เพราะมาจาก self -->
+
+    <!-- ตัวนี้จะ BLOCK -->
+    <script src="https://evil.com/malicious.js"></script> 
+</body>
+</html>

